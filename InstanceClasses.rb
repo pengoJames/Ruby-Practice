@@ -1,14 +1,22 @@
-# require 'pry'
-# class Dog 
-# end
+require 'pry'
+class Dog 
+end
 
-# fido = Dog.new   #fido and snoopy are two different variables pointing at separate instances of the Dog class.
+fido = Dog.new   #fido and snoopy are two different variables pointing at separate instances of the Dog class.
 
-# fido.object_id
+fido.object_id
 
-# snoopy = Dog.new
+snoopy = Dog.new
 
-# lassie = Dog.new
+lassie = Dog.new
+
+
+
+
+
+
+
+
 
 # def reverse(hello)
 #     reversed_string = ""
@@ -135,39 +143,39 @@
 # end
 # puts vowels_with_if_single_line("o")
 
-class Animal
+# class Animal
 
-    $author = "group4"
+#     $author = "group4"
 
-    @@count = 0
+#     @@count = 0
 
-    attr_accessor :category, :name
+#     attr_accessor :category, :name
 
-    def initialize(category, name)
-        @category = category
-        @name = name
-        @@count += 1
-    end
+#     def initialize(category, name)
+#         @category = category
+#         @name = name
+#         @@count += 1
+#     end
 
-    def king
-        puts "The king of the jungle is the #{name} and its very #{category}"
-    end
+#     def king
+#         puts "The king of the jungle is the #{name} and its very #{category}"
+#     end
 
-    def self.count
-        "Class animal has #{@@count} objects"
-    end
-end
+#     def self.count
+#         "Class animal has #{@@count} objects"
+#     end
+# end
 
 
-lion = Animal.new("Wild", "Lion")
-puts lion.name
-puts lion.category
-lion.king
+# lion = Animal.new("Wild", "Lion")
+# puts lion.name
+# puts lion.category
+# lion.king
 
-donkey = Animal.new("Domestic", "Donkey")
-puts donkey.name
-puts donkey.category
+# donkey = Animal.new("Domestic", "Donkey")
+# puts donkey.name
+# puts donkey.category
 
-puts Animal.count
+# puts Animal.count
 
 
