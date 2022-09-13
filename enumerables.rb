@@ -22,12 +22,12 @@
 
 # upcased = ["this", "is", "Ruby"].map(&:upcase) #the pretzel colon syntax makes the code even more concise when only one method is called on every element in the array.
 
-book = { title: "The Hobbit", author: "J.R.R. Tolkien", publisher: "Allen & Unwin", published: 1937 }
+# book = { title: "The Hobbit", author: "J.R.R. Tolkien", publisher: "Allen & Unwin", published: 1937 }
 
-book.each do |key, value|
-    puts "Key: #{key}"
-    puts "Value: #{value}"
-end
+# book.each do |key, value|
+#     puts "Key: #{key}"
+#     puts "Value: #{value}"
+# end
 
 # new_array = ["this", "is", "Ruby"].each do |str|
 #     puts str.upcase
@@ -100,3 +100,67 @@ end
 
 # #sort_by method only passes one parameter to the block and does no require the comparison logic
 # sorted_users = users.sort_by { |user1| user1[:name] }
+
+# quiet_and_loud = ["hi", "HI", "shhh", "WHAT?!"]
+
+# quiet_and_loud.find do |word|
+#     word.upcase == true
+# end 
+
+# nums = [1, 2, 3, 4]
+# puts nums.map { |n| n * n }
+
+# cats_and_dogs = ["cat", "cat", "dog", "cat", "dog", "dog"]
+
+# cats_and_dogs.filter do |pet|
+#     pet == "cat"
+# end
+
+# lunch_menu = ["pizza", "sandwich", "sushi", "soup", "salad"]
+
+# lunch_menu.each do |lunch_item|
+#     puts lunch_item + "!"
+# end
+
+# class Pet
+#     attr_reader :name
+#     # attr_writer :name
+
+#     def initialize(name)
+#       @name = name
+#     end
+  
+#     def name
+#       @name
+#     end
+# end
+  
+# rabbit = Pet.new("Jabby")
+# puts rabbit.name = "Chokola"
+
+# class Dog
+#     def showing_self
+#       puts self
+#     end
+# end
+
+class Car
+
+  attr_accessor :name, :owner
+
+  def initialize(name)
+    @name = name
+  end
+
+  def honk
+    "Beep!"
+  end
+
+  def take_ownership(owner_name)
+    self.owner = owner_name
+  end
+
+end
+
+puts lancelot = Car.new("2003 Mitsubishi Lancer")
+puts lancelot.take_ownership("Robert")
